@@ -1,0 +1,65 @@
+html,
+body {
+  height: 80%;
+  width: 98%;
+  font-family: sans-serif;
+  text-align: center;
+  background-color: powderblue;
+  color: palevioletred;
+}
+
+h1 {
+  position: relative;
+  top: 40%;
+  font-size: 2.5rem;
+}
+
+#clock-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+  top: 45%;
+}
+
+.digit {
+  width: 40px;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: rgba(221, 160, 221, 0.568);
+  font-size: 45px;
+  border: 1px solid plum;
+}
+
+.colon {
+  line-height: 80px;
+  font-size: 48px;
+  text-align: center;
+}
+
+@media screen and (max-width: 460px) {
+  h1 {
+    font-size: 1.8rem;
+    top: 45%;
+  }
+  #clock-container{
+    top: 50%;
+  }
+  .digit {
+    width: 40px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+  }
+  .colon {
+    display: flex;
+    align-items: center;
+    font-size: 32px;
+    justify-content: center;
+  }
+}
